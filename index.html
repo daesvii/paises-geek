@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <br>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Geo-Paises Geek</title>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <h1 class="fs-1">
+            <a class="navbar-brand fs-1" href="index.html">
+            <img src="./images/logo.png" alt="" width="80" height="80" class="d-inline-block align-text-center">
+            <b> &nbsp Geo-Países Geek</b>
+            </a>
+            </h4>
+            <h4 class="fs-5 " >
+                <button id="citation_nav" class="align-text-center" >
+                    Citas
+                </button>
+            </h4>
+            <div class="row">
+                <br/><br/>
+                <div class="col-md-12">
+                    <a href="#" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://github.com/daesvi/Paises-Geek" target="_blank" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
+                    <a href="#" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+      </nav>
+      <p><hr></p>
+</head>
+<body>
+    
+    <div id="continentess">
+    <br>
+    <br>
+        <center><div class="container d-inline-flex" id="imagenes">
+            <div id="africa" class="d-inline-block">
+            <button href="" class="continente ">
+            <img src="./images/AFRICA.png" width="230px" height="270px" id="continente_africa">
+            </button>
+            </div>
+            <div id="asia">
+            <button href="" class="continente">
+            <img src="./images/ASIA.png" width="230px" height="270" id="continente_asia">
+            </button>
+            </div>
+            <div id="europa">
+            <button href="" class="continente">
+            <img src="./images/EUROPA.png" width="230px" height="270" id="continente_europa">
+            </button>
+            </div>
+            <div id="oceania">
+            <button href="" class="continente">
+            <img src="./images/OCEANIA.png" width="230px" height="270" id="continente_oceania">
+            </button>
+            </div>
+            <div id="america">
+            <button href="" class="continente">
+            <img src="./images/AMERICA.png" width="230px" height="270" id="continente_america">
+            </button>
+            </div>
+        </div>
+        
+        </center>
+    </div>
+    <br>    
+    <br>
+    <br>
+    <center><div class="container" id="lugares_africa">
+    </div></center>
+    <center><div class="container" id="lugares_asia">
+    </div></center>
+    <center><div class="container" id="lugares_europa">
+    </div></center>
+    <center><div class="container" id="lugares_oceania">
+    </div></center>
+    <center><div class="container" id="lugares_america">
+    </div></center>
+    <div id="more" class="container">
+        <button class="btn btn-outline-primary" id="volver"> Volver </button>
+        <div class="row">
+            <div class="col h-100 text-center">
+                <br>
+                <img id="more_image" src="./images/europa/paris.jpg.opdownload" width="350px" height="350px" alt="..."><br>
+                <br>
+                <h5  class="text-center"id="more_name">Nombre del lugar</h5>
+                <p id="more_description">descripción del lugar</p><br>
+                <img src="./images/AMERICA.png" alt="" id="image_continent" style="
+                    height: 8rem;
+                    transform: rotate(15deg);
+                    border: black 2px solid;
+                    box-shadow: 2px 5px 4px rgb(176, 176, 176);" >
+            </div>
+            <div class="col h-100 d-flex " id="col_right">
+                <div>
+                    <form id="citation">
+                    <h1 class="text-center">Agenda tu cita aquí</h1><br>
+                    <input type="text" name="" id="nombre_lugar" placeholder="Nombre del lugar" size="57" readonly><br><br>
+                    <input type="text" name="" id="continente_lugar" placeholder="Continente" size="57" readonly >
+                    <br><br>
+                    <b> Fecha de partida</b><br>
+                    <input type="date" name="fecha_partida" id="fecha_partida"  ><br><br>
+                    <label for=""><b>Fecha de retorno</b></label><br>
+                    <input type="date" name="fecha_retorno" id="fecha_retorno" ><br><br>
+                    <textarea name="" id="comentarios" cols="60" rows="4" placeholder="Comentarios"></textarea> <br> <br>
+                    <center><input type="submit" class="btn btn-outline-primary" id="submit" value="Enviar"></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button class="btn btn-outline-primary float-left" id="volverr" style="width: 7rem; display: inline-flex;"> Volver </button>
+        <button class="btn btn-outline-danger" id="delete_all" style="width: 7rem; float: right;"> Borrar todo </button>
+    </div>
+    <div class="container" id="content_citation">
+        <center><h4 id="citas_nav">Tus citas</h4></center> <br>
+        <div class="container " id="content_citation_nav"  >
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+    <script type="module" src="./javascript/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</body>
+</html>
